@@ -1,0 +1,45 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.parent {
+    position: relative;
+    margin: auto;
+    padding-top: 10vh;
+    //background-color: red;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: center;
+    width: fit-content;
+    max-width: 100%;
+} 
+
+h1 {
+    font-family: 'Open Sans';
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.option {
+    width: 200px;
+    height: 200px;
+    border-radius: 69px;
+    text-align: center;
+    background: #f7f7f7;
+    box-shadow:  26px 26px 28px #e3e3e3, 
+             -26px -26px 28px #ffffff;
+    margin: 50px;
+    justify-content: center;
+            
+
+}
+
+.icon {
+    font-size: 50px;
+    padding-top: 10px;
+}
