@@ -9,21 +9,18 @@ let playerSelection
 let playerSelectionOG
 
 let button = Array.from(document.querySelectorAll('.option'));
-let buttonid = document.querySelector(`.option[id="${e.getAttribute('id')}"]`);
-button.forEach()
 
 
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+function adoption (i) {
+    let b = button[i]
+    b.addEventListener('click', () => {
+        playerSelection = b.getAttribute('id')
+      })
+}
 
-
-button[0].addEventListener('click', () => {
-    alert("Hello World");
-  });
-//button.getAttribute('id');
-
-  button.addEventListener('click', function (e) {
-    console.log(e.getAttribute('id'));
-  });
+for (let i = 0; i <button.length; i++) {
+    adoption(i)
+}
 
 function userSelect() {
     
@@ -50,9 +47,7 @@ function checkResults (playerSelection, computerSelection) {
 
 function game() {
     computerPlay()
-    userSelect()
+    //userSelect()
     console.log(checkResults(playerSelection,computerSelection))
-    
 }
 
-game()
