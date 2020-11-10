@@ -35,8 +35,20 @@ h1 {
              -26px -26px 28px #ffffff;
     margin: 50px;
     justify-content: center;
-            
+}
 
+.option:hover {
+    border-radius: 69px;
+    background: linear-gradient(145deg, #dedede, #ffffff);
+    box-shadow:  26px 26px 28px #e3e3e3, 
+                -26px -26px 28px #ffffff;
+}
+
+.option:active {
+    border-radius: 69px;
+background: #f7f7f7;
+box-shadow: inset 26px 26px 28px #e3e3e3, 
+            inset -26px -26px 28px #ffffff;
 }
 
 .icon {
