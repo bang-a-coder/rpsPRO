@@ -15,6 +15,8 @@ function adoption (i) {
     let b = button[i]
     b.addEventListener('click', () => {
         playerSelection = b.getAttribute('id')
+        game()
+
       })
 }
 
@@ -44,10 +46,12 @@ function checkResults (playerSelection, computerSelection) {
     
 }
 
+const resultdiv = document.querySelector('.result')
+
 
 function game() {
     computerPlay()
-    //userSelect()
     console.log(checkResults(playerSelection,computerSelection))
+    resultdiv.textContent = checkResults(playerSelection,computerSelection) + `| Computer Selection:` + computerSelection
 }
 
